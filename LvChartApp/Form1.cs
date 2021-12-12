@@ -30,7 +30,9 @@ namespace LvChartApp
             cartesianChart1.AxisY.Add(new LiveCharts.Wpf.Axis
             {
                 Title="Revenue",
-                LabelFormatter = value => value.ToString("C")
+                LabelFormatter = value => value.ToString("C"),
+                MinValue = 0
+
             });
             cartesianChart1.LegendLocation = LiveCharts.LegendLocation.Bottom;
         }
